@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "API Testing Collection",
+    "_postman_id": "12345-test-id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth - Valid Login",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"login\": \"user\", \"password\": \"12345\"}"
+        },
+        "url": { "raw": "https://example.com/auth", "protocol": "https", "host": ["example", "com"], "path": ["auth"] }
+      }
+    }
+  ]
+}
